@@ -11,3 +11,8 @@ def apply_discount(price, discount):
 
     if discount < 0 or discount > 100:
         return "The discount should be between 0 and 100"
+
+    discount_amount = price * (discount / 100)
+    final_price = price - discount_amount
+
+    return final_price
